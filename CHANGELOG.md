@@ -1,3 +1,7 @@
+HandyNotes Argus | 1.3
+----------------------
+- ToC update for 10.1.0
+
 HandyNotes Argus | 1.2.0
 ------------------------
 - ToC update for 9.2.0

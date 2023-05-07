@@ -1,4 +1,4 @@
-## Interface: 90207
+## Interface: 100100
 ## Version: @project-version@
 
 ## Title: HandyNotes: Argus
@@ -10,7 +10,10 @@
 
 ## SavedVariables: HandyNotesArgusDB
 
-embeds.xml
+#@non-debug@
+# embeds.xml
+#@end-non-debug@
+
 localization\enUS.lua
 localization\deDE.lua
 localization\esES.lua
