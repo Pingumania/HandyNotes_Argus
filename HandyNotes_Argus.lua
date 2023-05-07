@@ -23,11 +23,11 @@ if not HandyNotes then return end
 
 local objAtlas = "Interface\\Addons\\HandyNotes_Argus\\Artwork\\ObjectIconsAtlas.blp";
 local iconDefaults = {
-    skull_grey = "Interface\\Addons\\HandyNotes_Argus\\Artwork\\RareWhite.blp",
-    skull_purple = "Interface\\Addons\\HandyNotes_Argus\\Artwork\\RarePurple.blp",
-    skull_blue = "Interface\\Addons\\HandyNotes_Argus\\Artwork\\RareBlue.blp",
-    skull_yellow = "Interface\\Addons\\HandyNotes_Argus\\Artwork\\RareYellow.blp",
-    battle_pet = "Interface\\Addons\\HandyNotes_Argus\\Artwork\\BattlePet.blp",
+	skull_grey = "Interface\\Addons\\HandyNotes_Argus\\Artwork\\RareWhite.blp",
+	skull_purple = "Interface\\Addons\\HandyNotes_Argus\\Artwork\\RarePurple.blp",
+	skull_blue = "Interface\\Addons\\HandyNotes_Argus\\Artwork\\RareBlue.blp",
+	skull_yellow = "Interface\\Addons\\HandyNotes_Argus\\Artwork\\RareYellow.blp",
+	battle_pet = "Interface\\Addons\\HandyNotes_Argus\\Artwork\\BattlePet.blp",
 	treasure = "Interface\\Addons\\HandyNotes_Argus\\Artwork\\Treasure.blp",
 	portal = "Interface\\Addons\\HandyNotes_Argus\\Artwork\\Portal.blp",
 	default = "Interface\\Icons\\TRADE_ARCHAEOLOGY_CHESTOFTINYGLASSANIMALS",
@@ -829,7 +829,7 @@ local function GetSourceID(itemLink)
     local itemID, _, _, slotName = GetItemInfoInstant(itemLink)
     local slots = inventorySlotsMap[slotName]
 
-    if slots == nil or slots == false or IsDressableItem(itemLink) == false then return end
+    if slots == nil or slots == false or C_Item.IsDressableItemByID(itemLink) == false then return end
 
     DressUpModel:SetUnit('player')
     DressUpModel:Undress()
